@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "StrategyTD",
-			"Path": "C:\\Development\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD.Target.cs",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "StrategyTDEditor",
-			"Path": "C:\\Development\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTDEditor.Target.cs",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTDEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -1,10 +1,10 @@
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD\StrategyTDCharacter.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD\StrategyTDCharacter.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Inc\StrategyTD\StrategyTDCharacter.generated.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Inc\StrategyTD\StrategyTDCharacter.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h

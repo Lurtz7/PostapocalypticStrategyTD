@@ -1,9 +1,9 @@
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD/StrategyTDGameMode.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD/StrategyTDGameMode.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Inc\StrategyTD\StrategyTDGameMode.generated.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Inc\StrategyTD\StrategyTDGameMode.generated.h
