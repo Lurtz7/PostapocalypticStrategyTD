@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Testtesttestprojekt",
+			"Path": "E:\\Program\\Gittis\\PostapocalypticStrategyTD\\testtesttest\\Testtesttestprojekt\\Source\\Testtesttestprojekt.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TesttesttestprojektEditor",
+			"Path": "E:\\Program\\Gittis\\PostapocalypticStrategyTD\\testtesttest\\Testtesttestprojekt\\Source\\TesttesttestprojektEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
