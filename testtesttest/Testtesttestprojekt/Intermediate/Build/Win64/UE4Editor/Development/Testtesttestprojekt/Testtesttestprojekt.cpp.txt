@@ -1,2 +1,0 @@
-C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Development\Testtesttestprojekt\Definitions.Testtesttestprojekt.h
-C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Source\Testtesttestprojekt\Testtesttestprojekt.h
