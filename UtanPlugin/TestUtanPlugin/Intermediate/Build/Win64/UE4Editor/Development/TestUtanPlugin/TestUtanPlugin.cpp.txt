@@ -1,0 +1,2 @@
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Intermediate\Build\Win64\UE4Editor\Development\TestUtanPlugin\Definitions.TestUtanPlugin.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Source\TestUtanPlugin\TestUtanPlugin.h

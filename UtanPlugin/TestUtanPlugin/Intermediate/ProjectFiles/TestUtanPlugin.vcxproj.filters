@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TestUtanPlugin.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C2B37150-0899-43DE-B5F3-BC5ED5F510F6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TestUtanPlugin.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TestUtanPluginEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{30520850-27C6-4EE9-89E4-D175855536D1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TestUtanPlugin">
+      <UniqueIdentifier>{2DC6BBDA-A454-48D1-9DFE-57F5999D37C0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TestUtanPlugin\TestUtanPlugin.Build.cs">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TestUtanPlugin\TestUtanPlugin.cpp">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestUtanPlugin\TestUtanPlugin.h">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TestUtanPlugin\TestUtanPluginCharacter.cpp">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestUtanPlugin\TestUtanPluginCharacter.h">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TestUtanPlugin\TestUtanPluginGameMode.cpp">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestUtanPlugin\TestUtanPluginGameMode.h">
+      <Filter>Source\TestUtanPlugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TestUtanPlugin",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\UtanPlugin\\TestUtanPlugin\\Source\\TestUtanPlugin.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TestUtanPluginEditor",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\UtanPlugin\\TestUtanPlugin\\Source\\TestUtanPluginEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
