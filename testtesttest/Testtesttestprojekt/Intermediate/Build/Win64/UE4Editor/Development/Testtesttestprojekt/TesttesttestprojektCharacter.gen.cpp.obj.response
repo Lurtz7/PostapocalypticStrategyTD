@@ -31,8 +31,8 @@
 /wd4838
 /we4668
 /I .
-/I E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Inc\Testtesttestprojekt
-/I E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Source
+/I C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Inc\Testtesttestprojekt
+/I C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Inc\Testtesttestprojekt\TesttesttestprojektCharacter.gen.cpp"
-/FI"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Development\Testtesttestprojekt\Definitions.Testtesttestprojekt.h"
-/Fo"E:\Program\Gittis\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Development\Testtesttestprojekt\TesttesttestprojektCharacter.gen.cpp.obj"
+/FI"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\TesttesttestprojektEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Inc\Testtesttestprojekt\TesttesttestprojektCharacter.gen.cpp"
+/FI"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Development\Testtesttestprojekt\Definitions.Testtesttestprojekt.h"
+/Fo"C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\testtesttest\Testtesttestprojekt\Intermediate\Build\Win64\UE4Editor\Development\Testtesttestprojekt\TesttesttestprojektCharacter.gen.cpp.obj"
 /TP
 /GR-
 /W4
