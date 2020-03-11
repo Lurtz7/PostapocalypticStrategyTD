@@ -1,4 +1,4 @@
-﻿Log file open, 03/10/20 23:05:44
+﻿Log file open, 03/11/20 19:33:36
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: StrategyTD
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.066455
+LogStats: Stats thread started at 0.067502
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -133,7 +133,7 @@ LogInit: Compiled (64-bit): Feb 24 2020 15:39:18
 LogInit: Compiled with Visual C++: 19.16.27032.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.24
-LogInit: Command Line:  -EpicPortal -epicusername=Lurtz7 -epicuserid=7bd20f04bb3442028bf0390de7a815dc -epiclocale=en
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 25
@@ -166,525 +166,446 @@ LogInit: Presizing for max 25165824 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2020.03.10-22.05.44:382][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2020.03.10-22.05.44:382][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2020.03.10-22.05.44:382][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:382][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:383][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2020.03.10-22.05.44:383][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:383][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:387][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.03.10-22.05.44:387][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.03.10-22.05.44:388][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.03.10-22.05.44:388][  0]LogInit: Selected Device Profile: [Windows]
-[2020.03.10-22.05.44:388][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.03.10-22.05.44:391][  0]LogHAL: Display: Platform has ~ 16 GB [17113296896 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.03.10-22.05.44:391][  0]LogInit: Going up to parent DeviceProfile []
-[2020.03.10-22.05.44:391][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.03.10-22.05.44:391][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2020.03.10-22.05.44:392][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
-[2020.03.10-22.05.44:392][  0]LogInit: Computer: DESKTOP-AG159DR
-[2020.03.10-22.05.44:392][  0]LogInit: User: mrale
-[2020.03.10-22.05.44:392][  0]LogInit: CPU Page size=4096, Cores=8
-[2020.03.10-22.05.44:392][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.03.10-22.05.44:393][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2020.03.10-22.05.44:393][  0]LogMemory: Platform Memory Stats for Windows
-[2020.03.10-22.05.44:393][  0]LogMemory: Process Physical Memory: 106.95 MB used, 106.96 MB peak
-[2020.03.10-22.05.44:393][  0]LogMemory: Process Virtual Memory: 102.98 MB used, 102.98 MB peak
-[2020.03.10-22.05.44:393][  0]LogMemory: Physical Memory: 9834.60 MB used,  6485.91 MB free, 16320.51 MB total
-[2020.03.10-22.05.44:393][  0]LogMemory: Virtual Memory: 5149.53 MB used,  134212576.00 MB free, 134217728.00 MB total
-[2020.03.10-22.05.44:396][  0]LogWindows: WindowsPlatformFeatures enabled
-[2020.03.10-22.05.44:411][  0]LogInit: Using OS detected language (en-US).
-[2020.03.10-22.05.44:411][  0]LogInit: Using OS detected locale (en-US).
-[2020.03.10-22.05.44:412][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2020.03.10-22.05.44:535][  0]LogInit: Setting process to per monitor DPI aware
-[2020.03.10-22.05.44:568][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.03.10-22.05.44:568][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.03.10-22.05.44:718][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.03.10-22.05.44:718][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2020.03.10-22.05.44:718][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2020.03.10-22.05.44:718][  0]LogD3D11RHI: D3D11 adapters:
-[2020.03.10-22.05.44:794][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080 Ti' (Feature Level 11_0)
-[2020.03.10-22.05.44:794][  0]LogD3D11RHI:       11127/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2020.03.10-22.05.44:797][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.03.10-22.05.44:797][  0]LogD3D11RHI:       0/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.03.10-22.05.44:797][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.03.10-22.05.44:808][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.03.10-22.05.44:808][  0]LogD3D11RHI:     GPU DeviceId: 0x1b06 (for the marketing name, search the web for "GPU Device Id")
-[2020.03.10-22.05.44:808][  0]LogWindows: EnumDisplayDevices:
-[2020.03.10-22.05.44:808][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080 Ti' (P:1 D:1)
-[2020.03.10-22.05.44:808][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:1)
-[2020.03.10-22.05.44:808][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
-[2020.03.10-22.05.44:809][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
-[2020.03.10-22.05.44:809][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2020.03.10-22.05.44:809][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080 Ti
-[2020.03.10-22.05.44:809][  0]LogD3D11RHI:   Driver Version: 442.50 (internal:26.21.14.4250, unified:442.50)
-[2020.03.10-22.05.44:809][  0]LogD3D11RHI:      Driver Date: 2-24-2020
-[2020.03.10-22.05.44:809][  0]LogRHI: Texture pool is 7788 MB (70% of 11127 MB)
-[2020.03.10-22.05.44:846][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2020.03.10-22.05.44:846][  0]LogD3D11RHI: Async texture creation enabled
-[2020.03.10-22.05.44:868][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2020.03.10-22.05.45:104][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2020.03.10-22.05.45:131][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2020.03.10-22.05.45:149][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2020.03.10-22.05.45:149][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2020.03.10-22.05.45:156][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2020.03.10-22.05.45:162][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2020.03.10-22.05.45:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2020.03.10-22.05.45:175][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2020.03.10-22.05.45:181][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2020.03.10-22.05.45:188][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2020.03.10-22.05.45:209][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2020.03.10-22.05.45:209][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2020.03.10-22.05.45:221][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2020.03.10-22.05.45:221][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2020.03.10-22.05.45:227][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2020.03.10-22.05.45:234][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2020.03.10-22.05.45:240][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2020.03.10-22.05.45:246][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2020.03.10-22.05.45:246][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.03.10-22.05.45:249][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2020.03.10-22.05.45:270][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Intermediate/Shaders/WorkingDirectory/1976/).
-[2020.03.10-22.05.45:270][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mrale/AppData/Local/Temp/UnrealShaderWorkingDir/2D31AE0048923DCD02CB9A98DC50581B/'.
-[2020.03.10-22.05.45:270][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2020.03.10-22.05.45:270][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2020.03.10-22.05.45:270][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2020.03.10-22.05.45:858][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: Loaded boot cache 0.04s 83MB C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.03.10-22.05.45:897][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.03.10-22.05.45:906][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.03.10-22.05.45:907][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.03.10-22.05.45:907][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2020.03.10-22.05.45:908][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mrale/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.03.10-22.05.45:908][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.03.10-22.05.45:908][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.03.10-22.05.45:928][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.03.10-22.05.45:930][  0]LogSlate: Using FreeType 2.10.0
-[2020.03.10-22.05.45:931][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.03.10-22.05.45:974][  0]LogAssetRegistry: FAssetRegistry took 0.0020 seconds to start up
-[2020.03.10-22.05.46:238][  0]LogInit: Selected Device Profile: [Windows]
-[2020.03.10-22.05.46:360][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.03.10-22.05.46:360][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2020.03.10-22.05.46:360][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.03.10-22.05.46:360][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2020.03.10-22.05.46:360][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2020.03.10-22.05.46:373][  0]LogNetVersion: StrategyTD 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 1112207189)
-[2020.03.10-22.05.47:221][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.032000 seconds
-[2020.03.10-22.05.47:227][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
-[2020.03.10-22.05.47:227][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
-[2020.03.10-22.05.47:227][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.03.10-22.05.47:532][  0]LogPython: Using Python 2.7.14
-[2020.03.10-22.05.48:089][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.03.10-22.05.48:092][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2020.03.10-22.05.48:279][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.48:279][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.48:280][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.48:281][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.48:281][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.48:383][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.03.10-22.05.48:401][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.03.10-22.05.48:401][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.03.10-22.05.48:488][  0]LogOcInput: OculusInput pre-init called
-[2020.03.10-22.05.48:496][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2020.03.10-22.05.48:496][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2020.03.10-22.05.49:447][  0]LogEngine: Initializing Engine...
-[2020.03.10-22.05.49:448][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.03.10-22.05.49:449][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2020.03.10-22.05.49:713][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.03.10-22.05.49:721][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.03.10-22.05.49:727][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.03.10-22.05.49:727][  0]LogAudio: Display: Using built-in audio occlusion.
-[2020.03.10-22.05.49:727][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Name: Headphones (3- Arctis Pro Wireless Game)
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Is Default: Yes
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Sample Rate: 48000
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Channel Count Used: 2
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Device Channel Count: 2
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: Channel Order:
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: 0: FrontLeft
-[2020.03.10-22.05.49:779][  0]LogAudioMixer: Display: 1: FrontRight
-[2020.03.10-22.05.49:820][  0]LogAudioMixer: Display: Using Audio Device Headphones (3- Arctis Pro Wireless Game)
-[2020.03.10-22.05.49:824][  0]LogInit: FAudioDevice initialized.
-[2020.03.10-22.05.49:825][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.03.10-22.05.49:895][  0]LogDerivedDataCache: Saved boot cache 0.07s 82MB C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.03.10-22.05.49:897][  0]LogInit: Texture streaming: Enabled
-[2020.03.10-22.05.49:907][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.03.10-22.05.49:907][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2020.03.10-22.05.49:910][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2020.03.10-22.05.49:943][  0]LogInit: Transaction tracking system initialized
-[2020.03.10-22.05.49:951][  0]BlueprintLog: New page: Editor Load
-[2020.03.10-22.05.49:976][  0]LocalizationService: Localization service is disabled
-[2020.03.10-22.05.50:210][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/' took 0.00s
-[2020.03.10-22.05.50:210][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.03.10-22.05.50:210][  0]LogCook: Display: Mobile HDR setting 1
-[2020.03.10-22.05.50:786][  0]SourceControl: Source control is disabled
-[2020.03.10-22.05.50:786][  0]Cmd: MAP LOAD FILE="../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.03.10-22.05.50:787][  0]LightingResults: New page: Lighting Build
-[2020.03.10-22.05.50:788][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2020.03.10-22.05.50:788][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.03.10-22.05.50:788][  0]MapCheck: New page: Map Check
-[2020.03.10-22.05.50:788][  0]LightingResults: New page: Lighting Build
-[2020.03.10-22.05.50:814][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
-[2020.03.10-22.05.50:894][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2020.03.10-22.05.50:899][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.03.10-22.05.50:927][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
-[2020.03.10-22.05.50:928][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.03.10-22.05.50:928][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.2ms to complete.
-[2020.03.10-22.05.50:928][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.142
-[2020.03.10-22.05.51:055][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.03.10-22.05.51:060][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.03.10-22.05.51:065][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.03.10-22.05.51:070][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.03.10-22.05.51:076][  0]LogCollectionManager: Loaded 0 collections in 0.002281 seconds
-[2020.03.10-22.05.51:088][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Collections/' took 0.00s
-[2020.03.10-22.05.51:088][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/Developers/mrale/Collections/' took 0.00s
-[2020.03.10-22.05.51:088][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/Collections/' took 0.00s
-[2020.03.10-22.05.51:088][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 3040 classes and 729 folders.
-[2020.03.10-22.05.51:090][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.03.10-22.05.51:220][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.03.10-22.05.51:236][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 3 folders.
-[2020.03.10-22.05.51:283][  0]LogSlate: Window 'Tutorials' being destroyed
-[2020.03.10-22.05.51:298][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.03.10-22.05.51:298][  0]LogLoad: (Engine Initialization) Total time: 8.75 seconds
-[2020.03.10-22.05.51:298][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.03.10-22.05.51:342][  0]LogAssetRegistry: Asset discovery search completed in 5.3678 seconds
-[2020.03.10-22.05.51:345][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
-[2020.03.10-22.05.51:345][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.03.10-22.05.51:354][  0]LogSlate: Took 0.000208 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.03.10-22.05.51:355][  0]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.03.10-22.05.51:359][  0]LogSlate: Took 0.000662 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.03.10-22.05.51:444][  0]LogSlate: Took 0.000231 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.03.10-22.05.51:518][  0]LogRenderer: Reallocating scene render targets to support 804x360 Format 10 NumSamples 1 (Frame:1).
-[2020.03.10-22.05.57:217][240]LogSlate: Window 'Megascans' being destroyed
-[2020.03.10-22.05.59:358][305]MSLiveLinkLog: Successfully read asset json data
-[2020.03.10-22.05.59:371][305]LogLinker: Warning: Asset '../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/MSPresets/MS_DefaultMaterial/MS_DefaultMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.03.10-22.05.59:376][305]LogLinker: Warning: Asset '../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/MSPresets/MSTextures/Albedo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.03.10-22.05.59:377][305]LogLinker: Warning: Asset '../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/MSPresets/MSTextures/Normal.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.03.10-22.05.59:377][305]LogLinker: Warning: Asset '../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/MSPresets/MSTextures/Roughness.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.03.10-22.05.59:474][305]LogTexture: Display: Building textures: Roughness (AutoDXT, 512X512)
-[2020.03.10-22.05.59:474][305]LogTexture: Display: Building textures: Albedo (AutoDXT, 512X512)
-[2020.03.10-22.05.59:474][305]LogTexture: Display: Building textures: Normal (BC5, 512X512)
-[2020.03.10-22.05.59:474][305]LogMaterial: Display: Missing cached shader map for material MS_DefaultMaterial, compiling. 
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 15
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 13
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 11
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 9
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 7
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 5
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 3
-[2020.03.10-22.05.59:525][305]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 1
-[2020.03.10-22.05.59:636][305]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_8K_Albedo.jpg)
-[2020.03.10-22.06.01:703][305]LogTexture: Display: Building textures: tletbf2fa_8K_Albedo (AutoDXT, 8192X8192)
-[2020.03.10-22.06.09:090][305]LogTexture: Display: Building textures: tletbf2fa_8K_Albedo (BC7, 8192X8192)
-[2020.03.10-22.06.23:203][305]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_8K_Displacement.jpg)
-[2020.03.10-22.06.24:053][305]LogTexture: Display: Building textures: tletbf2fa_8K_Displacement (AutoDXT, 8192X8192)
-[2020.03.10-22.06.26:365][305]LogTexture: Display: Building textures: tletbf2fa_8K_Displacement (BC7, 8192X8192)
-[2020.03.10-22.06.40:915][305]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_8K_Roughness.jpg)
-[2020.03.10-22.06.41:952][305]LogTexture: Display: Building textures: tletbf2fa_8K_Roughness (AutoDXT, 8192X8192)
-[2020.03.10-22.06.44:802][305]LogTexture: Display: Building textures: tletbf2fa_8K_Roughness (BC7, 8192X8192)
-[2020.03.10-22.07.00:087][305]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_8K_Normal_LOD0.jpg)
-[2020.03.10-22.07.02:565][305]LogTexture: Display: Building textures: tletbf2fa_8K_Normal_LOD0 (BC5, 8192X8192)
-[2020.03.10-22.07.04:604][305]LogTexture: Display: Building textures: tletbf2fa_8K_Normal_LOD0 (BC5, 8192X8192)
-[2020.03.10-22.07.06:741][305]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD0.fbx)
-[2020.03.10-22.07.07:460][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD0.fbx
-[2020.03.10-22.07.07:554][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.07:658][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.07:759][305]LogStaticMesh: Built static mesh [0.10s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.07:793][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.07:942][305]LogExportMeshUtils: Fbx LOD loading
-[2020.03.10-22.07.08:005][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD1.fbx
-[2020.03.10-22.07.08:013][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.08:067][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.08:237][305]LogStaticMesh: Built static mesh [0.17s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.08:279][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.08:279][305]LogExportMeshUtils: Fbx LOD loading
-[2020.03.10-22.07.08:368][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD2.fbx
-[2020.03.10-22.07.08:375][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.08:431][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.08:647][305]LogStaticMesh: Built static mesh [0.22s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.08:719][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.08:719][305]LogExportMeshUtils: Fbx LOD loading
-[2020.03.10-22.07.08:840][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD3.fbx
-[2020.03.10-22.07.08:846][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.08:892][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.09:143][305]LogStaticMesh: Built static mesh [0.25s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.09:218][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.09:218][305]LogExportMeshUtils: Fbx LOD loading
-[2020.03.10-22.07.09:303][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD4.fbx
-[2020.03.10-22.07.09:308][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.09:339][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.09:605][305]LogStaticMesh: Built static mesh [0.27s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.09:660][305]LogStaticMesh: Warning: tletbf2fa_LOD0 has some nearly zero tangents which can create some issues. (Tolerance of 1E-4)
-[2020.03.10-22.07.09:660][305]LogStaticMesh: Warning: tletbf2fa_LOD0 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2020.03.10-22.07.09:691][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.09:691][305]FBXImport: Warning: tletbf2fa_LOD0 has some nearly zero tangents which can create some issues. (Tolerance of 1E-4) 
-[2020.03.10-22.07.09:691][305]FBXImport: Warning: tletbf2fa_LOD0 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2020.03.10-22.07.09:691][305]LogExportMeshUtils: Fbx LOD loading
-[2020.03.10-22.07.09:786][305]LogFbx: Loading FBX Scene from D:\Bridge-Plugin\Downloaded\3d\rock_mossy_tletbf2fa\tletbf2fa_LOD5.fbx
-[2020.03.10-22.07.09:791][305]LogFbx: FBX Scene Loaded Succesfully
-[2020.03.10-22.07.09:819][305]LogStaticMesh: Building static mesh tletbf2fa_LOD0...
-[2020.03.10-22.07.10:090][305]LogStaticMesh: Built static mesh [0.27s] /Game/Megascans/3D_Assets/Mossy_Rocks_00/tletbf2fa_LOD0.tletbf2fa_LOD0
-[2020.03.10-22.07.10:134][305]LogStaticMesh: Warning: tletbf2fa_LOD0 has some nearly zero tangents which can create some issues. (Tolerance of 1E-4)
-[2020.03.10-22.07.10:134][305]LogStaticMesh: Warning: tletbf2fa_LOD0 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2020.03.10-22.07.10:168][305]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.03.10-22.07.10:168][305]FBXImport: Warning: tletbf2fa_LOD0 has some nearly zero tangents which can create some issues. (Tolerance of 1E-4) 
-[2020.03.10-22.07.10:168][305]FBXImport: Warning: tletbf2fa_LOD0 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2020.03.10-22.07.27:630][693]LogSlate: Window 'Plugins' being destroyed
-[2020.03.10-22.07.27:635][693]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
-[2020.03.10-22.07.29:344][823]LogSlate: Window 'Message Log' being destroyed
-[2020.03.10-22.07.29:365][823]LogSlate: Window 'Message Log' being destroyed
-[2020.03.10-22.07.31:002][ 11]LogRenderer: Reallocating scene render targets to support 1616x808 Format 10 NumSamples 1 (Frame:959).
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:803][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:808][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:808][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.03.11-18.33.36:808][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.03.11-18.33.36:808][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:808][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.03.11-18.33.36:808][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:808][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.03.11-18.33.36:809][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:809][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.03.11-18.33.36:810][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.03.11-18.33.36:810][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.03.11-18.33.36:810][  0]LogInit: Selected Device Profile: [Windows]
+[2020.03.11-18.33.36:810][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.03.11-18.33.36:812][  0]LogHAL: Display: Platform has ~ 16 GB [17113063424 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.03.11-18.33.36:812][  0]LogInit: Going up to parent DeviceProfile []
+[2020.03.11-18.33.36:812][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.03.11-18.33.36:812][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Scalability.ini]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.03.11-18.33.36:813][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Config/Windows/Engine.ini]
+[2020.03.11-18.33.36:814][  0]LogInit: Computer: DESKTOP-AG159DR
+[2020.03.11-18.33.36:814][  0]LogInit: User: Alex
+[2020.03.11-18.33.36:814][  0]LogInit: CPU Page size=4096, Cores=8
+[2020.03.11-18.33.36:814][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.03.11-18.33.36:814][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.03.11-18.33.36:814][  0]LogMemory: Platform Memory Stats for Windows
+[2020.03.11-18.33.36:814][  0]LogMemory: Process Physical Memory: 106.80 MB used, 106.81 MB peak
+[2020.03.11-18.33.36:814][  0]LogMemory: Process Virtual Memory: 103.49 MB used, 103.49 MB peak
+[2020.03.11-18.33.36:814][  0]LogMemory: Physical Memory: 8463.55 MB used,  7856.74 MB free, 16320.29 MB total
+[2020.03.11-18.33.36:814][  0]LogMemory: Virtual Memory: 5149.53 MB used,  134212576.00 MB free, 134217728.00 MB total
+[2020.03.11-18.33.36:817][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.03.11-18.33.36:833][  0]LogInit: Using OS detected language (en-US).
+[2020.03.11-18.33.36:833][  0]LogInit: Using OS detected locale (en-US).
+[2020.03.11-18.33.36:834][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.03.11-18.33.36:956][  0]LogInit: Setting process to per monitor DPI aware
+[2020.03.11-18.33.36:988][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.03.11-18.33.36:988][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.03.11-18.33.37:139][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.03.11-18.33.37:139][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.03.11-18.33.37:140][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.03.11-18.33.37:140][  0]LogD3D11RHI: D3D11 adapters:
+[2020.03.11-18.33.37:204][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080 Ti' (Feature Level 11_0)
+[2020.03.11-18.33.37:204][  0]LogD3D11RHI:       11127/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.03.11-18.33.37:206][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.03.11-18.33.37:206][  0]LogD3D11RHI:       0/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.03.11-18.33.37:206][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.03.11-18.33.37:214][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.03.11-18.33.37:214][  0]LogD3D11RHI:     GPU DeviceId: 0x1b06 (for the marketing name, search the web for "GPU Device Id")
+[2020.03.11-18.33.37:214][  0]LogWindows: EnumDisplayDevices:
+[2020.03.11-18.33.37:214][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080 Ti' (P:1 D:1)
+[2020.03.11-18.33.37:214][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:1)
+[2020.03.11-18.33.37:214][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
+[2020.03.11-18.33.37:215][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
+[2020.03.11-18.33.37:215][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.03.11-18.33.37:215][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080 Ti
+[2020.03.11-18.33.37:215][  0]LogD3D11RHI:   Driver Version: 442.59 (internal:26.21.14.4259, unified:442.59)
+[2020.03.11-18.33.37:215][  0]LogD3D11RHI:      Driver Date: 3-4-2020
+[2020.03.11-18.33.37:215][  0]LogRHI: Texture pool is 7788 MB (70% of 11127 MB)
+[2020.03.11-18.33.37:249][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.03.11-18.33.37:250][  0]LogD3D11RHI: Async texture creation enabled
+[2020.03.11-18.33.37:251][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061086).
+[2020.03.11-18.33.37:268][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.03.11-18.33.37:492][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.03.11-18.33.37:518][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.03.11-18.33.37:519][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.03.11-18.33.37:535][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.03.11-18.33.37:535][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.03.11-18.33.37:541][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.03.11-18.33.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.03.11-18.33.37:554][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.03.11-18.33.37:560][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.03.11-18.33.37:566][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.03.11-18.33.37:572][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.03.11-18.33.37:593][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.03.11-18.33.37:593][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.03.11-18.33.37:604][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.03.11-18.33.37:604][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.03.11-18.33.37:611][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.03.11-18.33.37:617][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.03.11-18.33.37:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.03.11-18.33.37:629][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.03.11-18.33.37:629][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.03.11-18.33.37:632][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.03.11-18.33.37:652][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Intermediate/Shaders/WorkingDirectory/9104/).
+[2020.03.11-18.33.37:653][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mrale/AppData/Local/Temp/UnrealShaderWorkingDir/D55F684942A4F102D1925C8C0D5C12D1/'.
+[2020.03.11-18.33.37:653][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.03.11-18.33.37:653][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.03.11-18.33.37:653][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.03.11-18.33.38:268][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: Loaded boot cache 0.05s 82MB C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.03.11-18.33.38:314][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.03.11-18.33.38:323][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.03.11-18.33.38:324][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.03.11-18.33.38:324][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.03.11-18.33.38:325][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mrale/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.03.11-18.33.38:325][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.03.11-18.33.38:325][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.03.11-18.33.38:346][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.03.11-18.33.38:348][  0]LogSlate: Using FreeType 2.10.0
+[2020.03.11-18.33.38:349][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.03.11-18.33.38:397][  0]LogAssetRegistry: FAssetRegistry took 0.0022 seconds to start up
+[2020.03.11-18.33.38:643][  0]LogInit: Selected Device Profile: [Windows]
+[2020.03.11-18.33.38:776][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.03.11-18.33.38:776][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.03.11-18.33.38:776][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.03.11-18.33.38:776][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.03.11-18.33.38:776][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.03.11-18.33.38:789][  0]LogNetVersion: StrategyTD 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 1112207189)
+[2020.03.11-18.33.39:703][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.038615 seconds
+[2020.03.11-18.33.39:710][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.03.11-18.33.39:710][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.03.11-18.33.39:710][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.03.11-18.33.40:016][  0]LogPython: Using Python 2.7.14
+[2020.03.11-18.33.40:582][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.03.11-18.33.40:584][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.03.11-18.33.40:798][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.40:798][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.40:799][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.40:800][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.40:801][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.40:914][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.03.11-18.33.40:934][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.03.11-18.33.40:934][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.03.11-18.33.41:025][  0]LogOcInput: OculusInput pre-init called
+[2020.03.11-18.33.41:032][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.03.11-18.33.41:032][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.03.11-18.33.42:026][  0]LogEngine: Initializing Engine...
+[2020.03.11-18.33.42:027][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.03.11-18.33.42:028][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.03.11-18.33.42:308][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.03.11-18.33.42:316][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.03.11-18.33.42:320][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.03.11-18.33.42:320][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.03.11-18.33.42:320][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Name: Headphones (3- Arctis Pro Wireless Game)
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: Channel Order:
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.03.11-18.33.42:380][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.03.11-18.33.42:426][  0]LogAudioMixer: Display: Using Audio Device Headphones (3- Arctis Pro Wireless Game)
+[2020.03.11-18.33.42:429][  0]LogInit: FAudioDevice initialized.
+[2020.03.11-18.33.42:429][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.03.11-18.33.42:476][  0]LogDerivedDataCache: Saved boot cache 0.05s 82MB C:/Users/mrale/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.03.11-18.33.42:478][  0]LogInit: Texture streaming: Enabled
+[2020.03.11-18.33.42:490][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.03.11-18.33.42:490][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.03.11-18.33.42:493][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.03.11-18.33.42:526][  0]LogInit: Transaction tracking system initialized
+[2020.03.11-18.33.42:535][  0]BlueprintLog: New page: Editor Load
+[2020.03.11-18.33.42:565][  0]LocalizationService: Localization service is disabled
+[2020.03.11-18.33.42:833][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/' took 0.01s
+[2020.03.11-18.33.42:833][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.03.11-18.33.42:833][  0]LogCook: Display: Mobile HDR setting 1
+[2020.03.11-18.33.43:425][  0]SourceControl: Source control is disabled
+[2020.03.11-18.33.43:425][  0]Cmd: MAP LOAD FILE="../../../../../../Development/PostapocalypticStrategyTD/StrategyTD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.03.11-18.33.43:426][  0]LightingResults: New page: Lighting Build
+[2020.03.11-18.33.43:427][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.03.11-18.33.43:427][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.11-18.33.43:427][  0]MapCheck: New page: Map Check
+[2020.03.11-18.33.43:427][  0]LightingResults: New page: Lighting Build
+[2020.03.11-18.33.43:454][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2020.03.11-18.33.43:544][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.03.11-18.33.43:554][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.03.11-18.33.43:582][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2020.03.11-18.33.43:583][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.03.11-18.33.43:583][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.184ms to complete.
+[2020.03.11-18.33.43:583][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.158
+[2020.03.11-18.33.43:693][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.11-18.33.43:698][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.11-18.33.43:703][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.11-18.33.43:708][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.11-18.33.43:716][  0]LogCollectionManager: Loaded 0 collections in 0.002189 seconds
+[2020.03.11-18.33.43:733][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Saved/Collections/' took 0.00s
+[2020.03.11-18.33.43:733][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/Developers/Alex/Collections/' took 0.00s
+[2020.03.11-18.33.43:733][  0]LogFileCache: Scanning file cache for directory 'C:/Development/PostapocalypticStrategyTD/StrategyTD/Content/Collections/' took 0.00s
+[2020.03.11-18.33.43:733][  0]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 3040 classes and 729 folders.
+[2020.03.11-18.33.43:737][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.03.11-18.33.43:846][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.03.11-18.33.43:859][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 3 folders.
+[2020.03.11-18.33.43:920][  0]LogSlate: Window 'Tutorials' being destroyed
+[2020.03.11-18.33.43:932][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.03.11-18.33.43:932][  0]LogLoad: (Engine Initialization) Total time: 9.40 seconds
+[2020.03.11-18.33.43:932][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.03.11-18.33.43:977][  0]LogAssetRegistry: Asset discovery search completed in 5.5813 seconds
+[2020.03.11-18.33.43:980][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
+[2020.03.11-18.33.43:980][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.03.11-18.33.43:988][  0]LogSlate: Took 0.000177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.03.11-18.33.43:989][  0]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.03.11-18.33.43:993][  0]LogSlate: Took 0.000344 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.03.11-18.33.44:128][  0]LogRenderer: Reallocating scene render targets to support 804x360 Format 10 NumSamples 1 (Frame:1).
