@@ -385,22 +385,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/MegascansPlugin/Binaries/Win64/UE4Editor-MegascansPlugin.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/PythonScriptPlugin/Binaries/Win64/UE4Editor-PythonScriptPluginPreload.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/PythonScriptPlugin/Binaries/Win64/UE4Editor-PythonScriptPlugin.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Editor/EditorScriptingUtilities/Binaries/Win64/UE4Editor-EditorScriptingUtilities.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -942,10 +926,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-VulkanShaderFormat.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-TextureFormatAndroid.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2245,18 +2225,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/MegascansPlugin/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/PythonScriptPlugin/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Editor/EditorScriptingUtilities/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2592,18 +2560,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/WmfMedia.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/MegascansPlugin/MegascansPlugin.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/PythonScriptPlugin/PythonScriptPlugin.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Editor/EditorScriptingUtilities/EditorScriptingUtilities.uplugin",
 			"Type": "UFS"
 		},
 		{
