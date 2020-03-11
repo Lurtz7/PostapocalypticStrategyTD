@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Development\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD\\StrategyTD.Build.cs",
-		"C:\\Development\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD.Target.cs",
-		"C:\\Development\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTDEditor.Target.cs"
+		"E:\\Program\\Gittis\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD\\StrategyTD.Build.cs",
+		"E:\\Program\\Gittis\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTD.Target.cs",
+		"E:\\Program\\Gittis\\PostapocalypticStrategyTD\\StrategyTD\\Source\\StrategyTDEditor.Target.cs"
 	],
 	"EngineVersion": "4.24.3"
 }
