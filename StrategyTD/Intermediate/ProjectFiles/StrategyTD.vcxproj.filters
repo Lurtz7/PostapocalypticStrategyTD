@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\StrategyTD.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B25042E5-26C4-45C4-B76F-6971B2FDF25F}</UniqueIdentifier>
+      <UniqueIdentifier>{787C9EF2-CD2B-4E70-8200-1428A8C39D1C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\StrategyTD.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{745ED257-FA35-47EA-B8A0-794C5419C437}</UniqueIdentifier>
+      <UniqueIdentifier>{29601573-C4FB-4EA6-96B8-1B75799F277B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\StrategyTD">
-      <UniqueIdentifier>{9131BD8E-3C11-4224-BD29-4B46A3334481}</UniqueIdentifier>
+      <UniqueIdentifier>{54528348-38E0-4AEA-8800-FA64941C2120}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\StrategyTD\StrategyTD.Build.cs">
       <Filter>Source\StrategyTD</Filter>
