@@ -1,2 +1,2 @@
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
-C:\Development\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD\StrategyTD.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Intermediate\Build\Win64\UE4Editor\Development\StrategyTD\Definitions.StrategyTD.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\StrategyTD\Source\StrategyTD\StrategyTD.h

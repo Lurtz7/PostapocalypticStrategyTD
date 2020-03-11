@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Testtesttestprojekt",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\testtesttest\\Testtesttestprojekt\\Source\\Testtesttestprojekt.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TesttesttestprojektEditor",
+			"Path": "C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\testtesttest\\Testtesttestprojekt\\Source\\TesttesttestprojektEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

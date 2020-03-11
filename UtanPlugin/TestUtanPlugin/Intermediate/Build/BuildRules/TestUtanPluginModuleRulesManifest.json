@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\UtanPlugin\\TestUtanPlugin\\Source\\TestUtanPlugin\\TestUtanPlugin.Build.cs",
+		"C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\UtanPlugin\\TestUtanPlugin\\Source\\TestUtanPlugin.Target.cs",
+		"C:\\Users\\karls\\Documents\\GitHub\\PostapocalypticStrategyTD\\UtanPlugin\\TestUtanPlugin\\Source\\TestUtanPluginEditor.Target.cs"
+	],
+	"EngineVersion": "4.24.3"
+}
