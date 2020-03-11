@@ -1,0 +1,9 @@
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Intermediate\Build\Win64\UE4Editor\Development\TestUtanPlugin\Definitions.TestUtanPlugin.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Source\TestUtanPlugin/TestUtanPluginCharacter.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Intermediate\Build\Win64\UE4Editor\Inc\TestUtanPlugin\TestUtanPluginCharacter.generated.h

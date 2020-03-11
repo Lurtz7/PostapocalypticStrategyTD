@@ -1,0 +1,3 @@
+C:\Users\karls\Documents\GitHub\PostapocalypticStrategyTD\UtanPlugin\TestUtanPlugin\Intermediate\Build\Win64\UE4Editor\Development\TestUtanPlugin\Definitions.TestUtanPlugin.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
