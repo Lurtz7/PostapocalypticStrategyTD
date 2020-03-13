@@ -19,6 +19,8 @@ public:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
 	AMainCameraHUD* HudPtr;
+	class AMainCameraMovement* ValueHolder;
+
 	
 
 protected:

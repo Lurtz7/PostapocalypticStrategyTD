@@ -14,6 +14,7 @@ class STRATEGYTD_API AMainCameraMovement : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AMainCameraMovement();
+	bool IsLeftMouseButtonDown = false;
 
 protected:
 	// Called when the game starts or when spawned
@@ -34,6 +35,7 @@ protected:
 		class USpringArmComponent* CameraArm;
 
 	class UFloatingPawnMovement* FloatingPawnMovement;
+	
 
 public:	
 	// Called every frame

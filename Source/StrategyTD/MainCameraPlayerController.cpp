@@ -15,6 +15,7 @@ AMainCameraPlayerController::AMainCameraPlayerController()
 void AMainCameraPlayerController::BeginPlay()
 {
 	HudPtr = Cast<AMainCameraHUD>(GetHUD());
+	ValueHolder = Cast<AMainCameraMovement>(GetPawn());
 }
 
 
@@ -22,20 +23,24 @@ void AMainCameraPlayerController::SelectionPressed()
 {
 	HudPtr->InitialPoint = HudPtr->GetMousePos2D();
 	HudPtr->bStartSelecting = true;
+	ValueHolder->IsLeftMouseButtonDown = true;
 
 }
 
 void AMainCameraPlayerController::SelectionReleased()
 {
 	HudPtr->bStartSelecting = false;
+	ValueHolder->IsLeftMouseButtonDown = false;
 }
 
 void AMainCameraPlayerController::MoveReleased()
 {
+	
 }
 
 void AMainCameraPlayerController::Constrains()
 {
+
 }
 
 

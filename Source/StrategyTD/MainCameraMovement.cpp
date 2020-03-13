@@ -52,13 +52,17 @@ void AMainCameraMovement::MoveRight(float Amount)
 
 void AMainCameraMovement::Turn(float Amount)
 {
-	AddControllerYawInput(Amount);
+	if (!IsLeftMouseButtonDown) {
+		AddControllerYawInput(Amount);
+	}
+	
 }
 
 void AMainCameraMovement::LookUp(float Amount)
 {	
-	AddControllerPitchInput(Amount);
-
+	if (!IsLeftMouseButtonDown) {
+		AddControllerPitchInput(Amount);
+	}
 }
 
 // Called every frame
