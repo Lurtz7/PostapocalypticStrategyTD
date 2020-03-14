@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/HUD.h"
+#include "MyActor.h"
 #include "MainCameraHUD.generated.h"
 
 /**
@@ -23,5 +24,6 @@ public:
 	FVector2D GetMousePos2D();
 
 	bool bStartSelecting = false;
+	TArray<AMyActor*>FoundActors;
 	
 };

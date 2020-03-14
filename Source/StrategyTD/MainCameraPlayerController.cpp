@@ -31,19 +31,21 @@ void AMainCameraPlayerController::SelectionReleased()
 {
 	HudPtr->bStartSelecting = false;
 	ValueHolder->IsLeftMouseButtonDown = false;
+	SelectedActors = HudPtr->FoundActors;
 }
 
 void AMainCameraPlayerController::MoveReleased()
 {
-	
+	if (SelectedActors.Num() > 0)
+	{
+		for (int32 i = 0; i < SelectedActors.Num(); i++)
+		{
+			FVector MoveLocation;
+			UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetInstigatorController(), MoveLocation); // AMYACTOR MÅSTE GÖRAS OM TILL EN PAWN!!!!
+			//UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetController(), MoveLocation);
+		}
+	}
 }
-
-void AMainCameraPlayerController::Constrains()
-{
-
-}
-
-
 
 void AMainCameraPlayerController::SetupInputComponent()
 {
@@ -52,6 +54,5 @@ void AMainCameraPlayerController::SetupInputComponent()
 	InputComponent->BindAction("LeftMouseClick", IE_Pressed, this, &AMainCameraPlayerController::SelectionPressed);
 	InputComponent->BindAction("LeftMouseClick", IE_Released, this, &AMainCameraPlayerController::SelectionReleased);
 	InputComponent->BindAction("RightMouseClick", IE_Released, this, &AMainCameraPlayerController::MoveReleased);
-	InputComponent->BindAction("RightMouseClick", IE_Pressed, this, &AMainCameraPlayerController::Constrains);
 
 }

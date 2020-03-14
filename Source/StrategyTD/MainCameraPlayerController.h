@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "GameFramework/Pawn.h"
+#include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "MainCameraHUD.h"
 #include "GameFramework/PlayerController.h"
 #include "MainCameraPlayerController.generated.h"
@@ -27,8 +29,7 @@ protected:
 	void SelectionPressed();
 	void SelectionReleased();
 	void MoveReleased();
-	void Constrains();
-
+	TArray<AMyActor*>SelectedActors;
 	
  
 	
