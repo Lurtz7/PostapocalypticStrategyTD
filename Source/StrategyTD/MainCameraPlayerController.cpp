@@ -41,7 +41,7 @@ void AMainCameraPlayerController::MoveReleased()
 		for (int32 i = 0; i < SelectedActors.Num(); i++)
 		{
 			FVector MoveLocation;
-			UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetInstigatorController(), MoveLocation); // AMYACTOR MÅSTE GÖRAS OM TILL EN PAWN!!!!
+			//UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetInstigatorController(), MoveLocation); // AMYACTOR MÅSTE GÖRAS OM TILL EN PAWN!!!!
 			//UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetController(), MoveLocation);
 		}
 	}
