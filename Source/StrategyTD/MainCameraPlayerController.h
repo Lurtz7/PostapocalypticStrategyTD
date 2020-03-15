@@ -2,10 +2,11 @@
 
 #pragma once
 
+#include "MainCameraMovement.h"
 #include "GameFramework/Pawn.h"
-#include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "MainCameraHUD.h"
 #include "GameFramework/PlayerController.h"
+#include "DrawDebugHelpers.h"
 #include "MainCameraPlayerController.generated.h"
 
 /**
@@ -22,14 +23,16 @@ public:
 	virtual void SetupInputComponent() override;
 	AMainCameraHUD* HudPtr;
 	class AMainCameraMovement* ValueHolder;
-
-	
+	const FVector* MoveLocation;
+	FVector GetRandomPos() const;
+	void MoveReleased();
 
 protected:
 	void SelectionPressed();
 	void SelectionReleased();
-	void MoveReleased();
-	TArray<AMyActor*>SelectedActors;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ÁIItems")
+		TArray<AAIEnemyCharacter*>SelectedActors;
 	
  
 	

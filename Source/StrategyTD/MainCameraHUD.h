@@ -3,7 +3,7 @@
 #pragma once
 
 #include "GameFramework/HUD.h"
-#include "MyActor.h"
+#include "AIEnemyCharacter.h"
 #include "MainCameraHUD.generated.h"
 
 /**
@@ -24,6 +24,8 @@ public:
 	FVector2D GetMousePos2D();
 
 	bool bStartSelecting = false;
-	TArray<AMyActor*>FoundActors;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Pawn")
+		TArray<AAIEnemyCharacter*>FoundActors;
 	
 };
