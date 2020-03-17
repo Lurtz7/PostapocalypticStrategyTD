@@ -23,6 +23,7 @@ void AMainCameraHUD::DrawHUD()
 		CurrentPoint = GetMousePos2D();
 		DrawRect(FLinearColor(1, 0, 0, 0.15), InitialPoint.X, InitialPoint.Y, CurrentPoint.X - InitialPoint.X, CurrentPoint.Y - InitialPoint.Y);
 		GetActorsInSelectionRectangle<AAIEnemyCharacter>(InitialPoint, CurrentPoint, FoundActors, false, false);
+		
 
 		if (FoundActors.Num() > 0)
 		{
