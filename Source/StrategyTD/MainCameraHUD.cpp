@@ -18,18 +18,34 @@ void AMainCameraHUD::DrawHUD()
 				FoundActors[i]->SetDeselected();
 			}
 		}
+		if (FoundActorsCitadell.Num() > 0)
+		{
+			for (int32 i = 0; i < FoundActorsCitadell.Num(); i++)
+			{
+				FoundActorsCitadell[i]->SetDeselected();
+			}
+		}
 		FoundActors.Empty();
+		FoundActorsCitadell.Empty();
 
 		CurrentPoint = GetMousePos2D();
 		DrawRect(FLinearColor(1, 0, 0, 0.15), InitialPoint.X, InitialPoint.Y, CurrentPoint.X - InitialPoint.X, CurrentPoint.Y - InitialPoint.Y);
 		GetActorsInSelectionRectangle<AAIEnemyCharacter>(InitialPoint, CurrentPoint, FoundActors, false, false);
-		
+		GetActorsInSelectionRectangle<ACitadell>(InitialPoint, CurrentPoint, FoundActorsCitadell, false, false);
 
+		
 		if (FoundActors.Num() > 0)
 		{
 			for (int32 i = 0; i < FoundActors.Num(); i++)
 			{
 				FoundActors[i]->SetSelected();
+			}
+		}
+		if (FoundActorsCitadell.Num() > 0)
+		{
+			for (int32 i = 0; i < FoundActorsCitadell.Num(); i++)
+			{
+				FoundActorsCitadell[i]->SetSelected();
 			}
 		}
 	}

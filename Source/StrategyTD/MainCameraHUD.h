@@ -4,6 +4,7 @@
 
 #include "GameFramework/HUD.h"
 #include "AIEnemyCharacter.h"
+#include "Citadell.h"
 #include "MainCameraHUD.generated.h"
 
 /**
@@ -27,5 +28,8 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Pawn")
 		TArray<AAIEnemyCharacter*>FoundActors;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Pawn")
+		TArray<ACitadell*>FoundActorsCitadell;
 	
 };

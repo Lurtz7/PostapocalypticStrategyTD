@@ -29,7 +29,7 @@ public:
 	UStaticMeshComponent* StaticMesh;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Pawn")
-		bool isSelectionActivated = false;
+		bool isSelectionActivated= false;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

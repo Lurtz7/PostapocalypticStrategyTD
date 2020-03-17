@@ -5,6 +5,7 @@
 #include "MainCameraMovement.h"
 #include "GameFramework/Pawn.h"
 #include "MainCameraHUD.h"
+#include "Citadell.h"
 #include "GameFramework/PlayerController.h"
 #include "DrawDebugHelpers.h"
 #include "MainCameraPlayerController.generated.h"
@@ -33,6 +34,9 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ÁIItems")
 		TArray<AAIEnemyCharacter*>SelectedActors;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ÁIItems")
+		TArray<ACitadell*>SelectedActorsCitadell;
 	
  
 	

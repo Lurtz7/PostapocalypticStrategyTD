@@ -32,6 +32,7 @@ void AMainCameraPlayerController::SelectionReleased()
 	HudPtr->bStartSelecting = false;
 	ValueHolder->IsLeftMouseButtonDown = false;
 	SelectedActors = HudPtr->FoundActors;
+	SelectedActorsCitadell = HudPtr->FoundActorsCitadell;
 }
 
 FVector AMainCameraPlayerController::GetRandomPos() const
