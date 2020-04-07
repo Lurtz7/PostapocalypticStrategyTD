@@ -16,6 +16,7 @@ AMainCameraMovement::AMainCameraMovement()
 	PrimaryActorTick.bCanEverTick = true;
 
 	FloatingPawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>("PawnMovement");
+	FloatingPawnMovement->MaxSpeed = 250;
 
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("StaticMeshComponent");
 
@@ -42,12 +43,26 @@ void AMainCameraMovement::BeginPlay()
 
 void AMainCameraMovement::MoveForward(float Amount)
 {
-	FloatingPawnMovement->AddInputVector(GetActorForwardVector() * Amount);
+	if (forwardSpeed > 0) 
+	{
+		for (int i = 0; i < forwardSpeed; i++)
+		{
+			FloatingPawnMovement->AddInputVector(GetActorForwardVector() * Amount);
+		}
+			
+	}
 }
 
 void AMainCameraMovement::MoveRight(float Amount)
 {
-	FloatingPawnMovement->AddInputVector(GetActorRightVector() * Amount);
+	if (SideSpeed > 0)
+	{
+		for (int i = 0; i < SideSpeed; i++)
+		{
+			FloatingPawnMovement->AddInputVector(GetActorRightVector() * Amount);
+		}
+			
+	}
 }
 
 void AMainCameraMovement::Turn(float Amount)

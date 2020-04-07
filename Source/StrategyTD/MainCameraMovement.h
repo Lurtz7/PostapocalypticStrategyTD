@@ -26,6 +26,13 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Components")
 		class UCameraComponent* Camera;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpeedOfCamera")
+		int forwardSpeed = 5;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpeedOfCamera")
+		int SideSpeed = 5;
+
+
 	void MoveForward(float Amount);
 	void MoveRight(float Amount);
 	void Turn(float Amount);
@@ -40,11 +47,6 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-
-
-
 };
