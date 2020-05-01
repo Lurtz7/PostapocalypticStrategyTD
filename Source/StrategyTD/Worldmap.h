@@ -4,6 +4,7 @@
 
 #include "TextureGenerator.h"
 #include "HeightMapGenerator.h"
+#include "Engine/Engine.h"
 #include "CoreMinimal.h"
 #include "ProceduralMeshComponent.h"
 #include "GameFramework/Actor.h"
@@ -33,8 +34,8 @@ private:
 
 		int32 triangleIndex = 0;
 		bool bCreateCollision = true;
-		MeshData(uint32 meshWidth, uint32 meshHeight); // Constructor för MeshData struct
-		void AddTriangle(uint32 a, uint32 b, uint32 c); //Adderar alla triangelpunkter. 
+		MeshData(int32 meshWidth, int32 meshHeight); // Constructor för MeshData struct
+		void AddTriangle(int32 a, int32 b, int32 c); //Adderar alla triangelpunkter. 
 	};
 
 	struct TerrainType {
@@ -48,8 +49,8 @@ private:
 	};
 
 	//FUNCTIONS
-	void CreateMesh(uint32 mapWidth, uint32 mapHeight);
-
+	void CreateMesh(int32 mapWidth, int32 mapHeight);
+	
 	//POINTERS
 	TerrainType* regions;
 
@@ -64,6 +65,9 @@ private:
 
 	HeightMapGenerator* HeightmapPtr;
 
+	class AWorldMapDummySPawner* retainValues;
+	
+
 	float* height;
 
 
@@ -72,7 +76,9 @@ private:
 public:	
 	// Sets default values for this actor's properties
 	AWorldmap();
-	
+
+	UFUNCTION(BlueprintCallable)
+	void createWorld(int32 mapHeight, int32 mapWidth, float noiseScale, float persistace, float lucanarity, int32 octaves);
 	
 
 protected:

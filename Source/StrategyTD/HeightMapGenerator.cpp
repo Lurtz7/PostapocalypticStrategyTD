@@ -16,7 +16,7 @@ HeightMapGenerator::HeightMapGenerator()
 	regions[1].color = FColor(86, 152, 23, 255);
 }
 
-float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, float scale, float persistance, float lacunarity, uint32 octaves)
+float* HeightMapGenerator::GenerateNoiseMap(int32 mapWidth, int32 mapHeight, float scale, float persistance, float lacunarity, int32 octaves)
 {
 	float iterX = 1 / float(mapWidth);
 	float iterY = 1 / float(mapHeight);
@@ -32,15 +32,15 @@ float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, f
 
 	if (iterX != 0 && iterY != 0)
 	{
-		for (uint32 y = 0; y < mapHeight; y++)
+		for (int32 y = 0; y < mapHeight; y++)
 		{
-			for (uint32 x = 0; x < mapWidth; x++)
+			for (int32 x = 0; x < mapWidth; x++)
 			{
 				float amplitude = 1;
 				float frequency = 1;
 				float noiseHeight = 0;
 				int32 CurrentPointIndex = ((y * mapWidth) + x);
-				for (uint32 i = 0; i < octaves; i++) {
+				for (int32 i = 0; i < octaves; i++) {
 
 					float sampleX = (float(x) / mapWidth * (scale * frequency));
 					float sampleY = (float(y) / mapHeight * (scale * frequency));
@@ -53,9 +53,9 @@ float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, f
 				noisePerlinValues[CurrentPointIndex] = noiseHeight;
 			}
 		}
-		for (uint32 y = 0; y < mapHeight; y++)
+		for (int32 y = 0; y < mapHeight; y++)
 		{
-			for (uint32 x = 0; x < mapWidth; x++)
+			for (int32 x = 0; x < mapWidth; x++)
 			{
 				int32 CurrentPointIndex = ((y * mapWidth) + x);
 				if (noisePerlinValues[CurrentPointIndex] > maxValue)
@@ -63,9 +63,9 @@ float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, f
 					maxValue = noisePerlinValues[CurrentPointIndex];
 				}
 			}
-			for (uint32 x = 0; x < mapWidth; x++)
+			for (int32 x = 0; x < mapWidth; x++)
 			{
-				uint32 CurrentPointIndex = ((y * mapWidth) + x);
+				int32 CurrentPointIndex = ((y * mapWidth) + x);
 				if (noisePerlinValues[CurrentPointIndex] < minValue)
 				{
 					minValue = noisePerlinValues[CurrentPointIndex];
@@ -73,9 +73,9 @@ float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, f
 			}
 		}
 
-		for (uint32 y = 0; y < mapHeight; y++)
+		for (int32 y = 0; y < mapHeight; y++)
 		{
-			for (uint32 x = 0; x < mapWidth; x++)
+			for (int32 x = 0; x < mapWidth; x++)
 			{
 				int32 CurrentPointIndex = ((y * mapWidth) + x);
 				noisePerlinValues[CurrentPointIndex] = UKismetMathLibrary::NormalizeToRange(noisePerlinValues[CurrentPointIndex], minValue, maxValue);
@@ -86,17 +86,17 @@ float* HeightMapGenerator::GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, f
 	return noisePerlinValues;
 }
 
-void HeightMapGenerator::GenerateColorMap(uint32 mapWidth, uint32 mapHeight)
+void HeightMapGenerator::GenerateColorMap(int32 mapWidth, int32 mapHeight)
 {
 	colorMap = new FColor[mapWidth * mapHeight];
-	for (uint32 y = 0; y < mapHeight; y++)
+	for (int32 y = 0; y < mapHeight; y++)
 	{
-		for (uint32 x = 0; x < mapWidth; x++)
+		for (int32 x = 0; x < mapWidth; x++)
 		{
 			int32 CurrentPointIndex = ((y * mapWidth) + x);
 			float currentHeight = noisePerlinValues[CurrentPointIndex];
 
-			for (uint32 i = 0; i < 2; i++)
+			for (int32 i = 0; i < 2; i++)
 			{
 				if (currentHeight <= regions[i].height)
 				{

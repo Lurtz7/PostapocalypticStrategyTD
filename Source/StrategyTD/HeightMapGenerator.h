@@ -29,7 +29,7 @@ private:
 
 public:
 	HeightMapGenerator();
-    float* GenerateNoiseMap(uint32 mapWidth, uint32 mapHeight, float scale, float persistance, float lacunarity, uint32 octaves);
-    void GenerateColorMap(uint32 mapWidth, uint32 mapHeight);
+    float* GenerateNoiseMap(int32 mapWidth, int32 mapHeight, float scale, float persistance, float lacunarity, int32 octaves);
+    void GenerateColorMap(int32 mapWidth, int32 mapHeight);
     
 };

@@ -1,6 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "WorldMapDummySPawner.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
+#include "UObject/UObjectGlobals.h"
 #include "Worldmap.h"
 
 // Sets default values
@@ -10,11 +13,43 @@ AWorldmap::AWorldmap()
 	PrimaryActorTick.bCanEverTick = true;
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("Static Mesh");
 	Mesh = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("ProcedualMesh"));
+	//ObjectToFind = AWorldMapDummySPawner::StaticClass();
+	retainValues = Cast<AWorldMapDummySPawner>(this);
+	retainValues = NewObject<AWorldMapDummySPawner>();
 	TextureGeneratorPtr = new TextureGenerator();
 	HeightmapPtr = new HeightMapGenerator();
 
-	height = HeightmapPtr->GenerateNoiseMap(256, 256, 15.f, 0.5f,2.5f,5);
-	CreateMesh(256, 256);
+	if (retainValues)
+	{
+		UE_LOG(LogTemp, Warning, TEXT(" Retain is found"));
+		int32 mHeight = retainValues->NmapHeight;
+		int32 mWidth = retainValues->NmapWidth;
+		int32 octaves = retainValues->Noctaves;
+		float nScale = retainValues->NnoiseScale;
+		float persistance = retainValues->Npersistance;
+		float lucanarity = retainValues->Nlacunarity;
+		UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT(" Retain is null"));
+		int32 mHeight = retainValues->NmapHeight;
+		//UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);
+	}
+	
+
+	/*UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f"), persistance);
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);*/
+
+	float LO = 2.f;
+	float HI = 20.f;
+	float r3 = LO + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / (HI - LO)));
+
+	//height = HeightmapPtr->GenerateNoiseMap(128, 128, 15.f, 0.5f, 2.f, 4);
+	//CreateMesh(128, 128);
+
+	//height = HeightmapPtr->GenerateNoiseMap(256, 256, r3, 0.5f,2.5f,5);
+	
 }
 
 // Called when the game starts or when spawned
@@ -31,14 +66,14 @@ void AWorldmap::Tick(float DeltaTime)
 
 }
 
-AWorldmap::MeshData::MeshData(uint32 meshWidth, uint32 meshHeight)
+AWorldmap::MeshData::MeshData(int32 meshWidth, int32 meshHeight)
 {
 	normals.Init(FVector(0.0f, 0.0f, 1.0f), meshWidth * meshHeight);
 	tangents.Init(FProcMeshTangent(1.0f, 0.0f, 0.0f), meshWidth * meshHeight);
 	vertexColors.Init(FLinearColor(0.f, 0.f, 0.f), meshWidth * meshHeight);
 }
 
-void AWorldmap::MeshData::AddTriangle(uint32 a, uint32 b, uint32 c)
+void AWorldmap::MeshData::AddTriangle(int32 a, int32 b, int32 c)
 {
 	Triangles.EmplaceAt(triangleIndex, a);
 	Triangles.EmplaceAt(triangleIndex + 1, b);
@@ -46,19 +81,19 @@ void AWorldmap::MeshData::AddTriangle(uint32 a, uint32 b, uint32 c)
 	triangleIndex += 3;
 }
 
-void AWorldmap::CreateMesh(uint32 mapWidth, uint32 mapHeight)
+void AWorldmap::CreateMesh(int32 mapWidth, int32 mapHeight)
 {
 
-	float scaleXY = 100;
-	float scaleZ = 700;
+	float scaleXY = 1.f;
+	float scaleZ = 10.f;
 	
 	meshData = new MeshData(mapWidth, mapHeight);
 	int vertexIndex = 0;
 	float topLeftX = (mapWidth - 1) / -2.f; //FUNGERAR INTE ?
 	float topLeftZ = (mapHeight - 1) / 2.f;
-	for (uint32 y = 0; y < mapHeight; y++)
+	for (int32 y = 0; y < mapHeight; y++)
 	{
-		for (uint32 x = 0; x < mapWidth; x++)
+		for (int32 x = 0; x < mapWidth; x++)
 		{
 			int32 CurrentPointIndex = ((y * mapWidth) + x);
 			meshData->Vertices.Add(FVector((topLeftX + x) * scaleXY, (topLeftZ - y) * scaleXY, *(height + CurrentPointIndex) * scaleZ ));
@@ -87,4 +122,20 @@ void AWorldmap::CreateMesh(uint32 mapWidth, uint32 mapHeight)
 	}*/
 
 	Mesh->CreateMeshSection_LinearColor(0, meshData->Vertices, meshData->Triangles, meshData->normals, meshData->UVS, meshData->vertexColors, meshData->tangents, true);
+}
+
+void AWorldmap::createWorld(int32 mapHeight, int32 mapWidth, float noiseScale, float persistace, float lucanarity, int32 octaves)
+{
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mapWidth);
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mapHeight);
+
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f"), noiseScale);
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f"), persistace);
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f"), lucanarity);
+
+	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), octaves);
+
+
+	height = HeightmapPtr->GenerateNoiseMap(mapWidth, mapHeight, noiseScale,persistace, lucanarity, octaves);
+	CreateMesh(mapWidth, mapHeight);
 }
