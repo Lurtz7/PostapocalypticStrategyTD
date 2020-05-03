@@ -13,43 +13,20 @@ AWorldmap::AWorldmap()
 	PrimaryActorTick.bCanEverTick = true;
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("Static Mesh");
 	Mesh = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("ProcedualMesh"));
-	//ObjectToFind = AWorldMapDummySPawner::StaticClass();
-	retainValues = Cast<AWorldMapDummySPawner>(this);
-	retainValues = NewObject<AWorldMapDummySPawner>();
+
+	//static ConstructorHelpers::FObjectFinder<UMaterialInterface> BarFillObj(TEXT("/Game/Material/WorldmapMaterial/m_WorldmapMaterial_Inst"));
+	//worldMapMaterial = BarFillObj.Object;
 	TextureGeneratorPtr = new TextureGenerator();
 	HeightmapPtr = new HeightMapGenerator();
 
-	if (retainValues)
-	{
-		UE_LOG(LogTemp, Warning, TEXT(" Retain is found"));
-		int32 mHeight = retainValues->NmapHeight;
-		int32 mWidth = retainValues->NmapWidth;
-		int32 octaves = retainValues->Noctaves;
-		float nScale = retainValues->NnoiseScale;
-		float persistance = retainValues->Npersistance;
-		float lucanarity = retainValues->Nlacunarity;
-		UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT(" Retain is null"));
-		int32 mHeight = retainValues->NmapHeight;
-		//UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);
-	}
-	
+	regions = new TerrainType[2];
+	regions[0].name = "Water";
+	regions[0].height = 0.4;
+	regions[0].color = FColor::Blue;
 
-	/*UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f"), persistance);
-	UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d"), mHeight);*/
-
-	float LO = 2.f;
-	float HI = 20.f;
-	float r3 = LO + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / (HI - LO)));
-
-	//height = HeightmapPtr->GenerateNoiseMap(128, 128, 15.f, 0.5f, 2.f, 4);
-	//CreateMesh(128, 128);
-
-	//height = HeightmapPtr->GenerateNoiseMap(256, 256, r3, 0.5f,2.5f,5);
-	
+	regions[1].name = "Landscape";
+	regions[1].height = 1;
+	regions[1].color = FColor(86, 152, 23, 255);
 }
 
 // Called when the game starts or when spawned
@@ -68,7 +45,7 @@ void AWorldmap::Tick(float DeltaTime)
 
 AWorldmap::MeshData::MeshData(int32 meshWidth, int32 meshHeight)
 {
-	normals.Init(FVector(0.0f, 0.0f, 1.0f), meshWidth * meshHeight);
+	normals.Init(FVector(0.0f, 0.0f, 1.0f), meshWidth*meshHeight);
 	tangents.Init(FProcMeshTangent(1.0f, 0.0f, 0.0f), meshWidth * meshHeight);
 	vertexColors.Init(FLinearColor(0.f, 0.f, 0.f), meshWidth * meshHeight);
 }
@@ -84,13 +61,21 @@ void AWorldmap::MeshData::AddTriangle(int32 a, int32 b, int32 c)
 void AWorldmap::CreateMesh(int32 mapWidth, int32 mapHeight)
 {
 
-	float scaleXY = 1.f;
-	float scaleZ = 10.f;
+	float scaleXY = 100.f;
+	float scaleZ = 500.f;
 	
 	meshData = new MeshData(mapWidth, mapHeight);
+	MeshDataWater = new MeshData(mapWidth, mapHeight);
+	MeshDataTerrain = new MeshData(mapWidth, mapHeight);
 	int vertexIndex = 0;
+
+	int verteXIndexWater = 0;
+	int vertexIndexTerrain = 0;
+
+
 	float topLeftX = (mapWidth - 1) / -2.f; //FUNGERAR INTE ?
 	float topLeftZ = (mapHeight - 1) / 2.f;
+
 	for (int32 y = 0; y < mapHeight; y++)
 	{
 		for (int32 x = 0; x < mapWidth; x++)
@@ -107,21 +92,8 @@ void AWorldmap::CreateMesh(int32 mapWidth, int32 mapHeight)
 		}
 	}
 
-	UE_LOG(LogTemp, Warning, TEXT("Size Vertex: %d"), meshData->Vertices.Num());
-	UE_LOG(LogTemp, Warning, TEXT("Size Triangles: %d"), meshData->Triangles.Num());
-	UE_LOG(LogTemp, Warning, TEXT("Size normals: %d"), meshData->normals.Num());
-	UE_LOG(LogTemp, Warning, TEXT("Size UVS: %d"), meshData->UVS.Num());
-	UE_LOG(LogTemp, Warning, TEXT("Size TANG: %d"), meshData->tangents.Num());
-	UE_LOG(LogTemp, Warning, TEXT("Size VertexColor: %d"), meshData->vertexColors.Num());
-
-	/*for (int i = 0; i < meshData->Triangles.Num(); i++) {
-		UE_LOG(LogTemp, Warning, TEXT(" Vertex: %d "), meshData->Triangles[i]);
-	}*/
-	/*for (int i = 0; i < meshData->Vertices.Num(); i++) {
-		UE_LOG(LogTemp, Warning, TEXT(" Vertex: %f , %f , %f"), meshData->Vertices[i].X, meshData->Vertices[i].Y, meshData->Vertices[i].Z);
-	}*/
-
 	Mesh->CreateMeshSection_LinearColor(0, meshData->Vertices, meshData->Triangles, meshData->normals, meshData->UVS, meshData->vertexColors, meshData->tangents, true);
+	//Mesh->SetMaterial(0, worldMapMaterial);
 }
 
 void AWorldmap::createWorld(int32 mapHeight, int32 mapWidth, float noiseScale, float persistace, float lucanarity, int32 octaves)

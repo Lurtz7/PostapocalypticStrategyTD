@@ -6,6 +6,7 @@
 #include "HeightMapGenerator.h"
 #include "Engine/Engine.h"
 #include "CoreMinimal.h"
+#include "UObject/ConstructorHelpers.h"
 #include "ProceduralMeshComponent.h"
 #include "GameFramework/Actor.h"
 #include "Worldmap.generated.h"
@@ -35,6 +36,7 @@ private:
 		int32 triangleIndex = 0;
 		bool bCreateCollision = true;
 		MeshData(int32 meshWidth, int32 meshHeight); // Constructor för MeshData struct
+
 		void AddTriangle(int32 a, int32 b, int32 c); //Adderar alla triangelpunkter. 
 	};
 
@@ -57,9 +59,16 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* StaticMesh;
 
+	UPROPERTY(VisibleAnywhere)
+		UMaterialInterface* worldMapMaterial;
+
+
+
 	UProceduralMeshComponent* Mesh;
 
 	MeshData* meshData;
+	MeshData* MeshDataTerrain;
+	MeshData* MeshDataWater;
 
 	TextureGenerator* TextureGeneratorPtr;
 
@@ -79,7 +88,6 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void createWorld(int32 mapHeight, int32 mapWidth, float noiseScale, float persistace, float lucanarity, int32 octaves);
-	
 
 protected:
 	// Called when the game starts or when spawned
