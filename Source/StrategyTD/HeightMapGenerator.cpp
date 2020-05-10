@@ -82,6 +82,15 @@ float* HeightMapGenerator::GenerateNoiseMap(int32 mapWidth, int32 mapHeight, flo
 			}
 		}
 
+		for (int32 y = 0; y < mapHeight; y++)
+		{
+			for (int32 x = 0; x < mapWidth; x++)
+			{
+				int32 CurrentPointIndex = ((y * mapWidth) + x);
+				UE_LOG(LogTemp, Warning, TEXT(" NoisePerlinValue: %f"), noisePerlinValues[CurrentPointIndex]);
+			}
+		}
+
 	}
 	return noisePerlinValues;
 }

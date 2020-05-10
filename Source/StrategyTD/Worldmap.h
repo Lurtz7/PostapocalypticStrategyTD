@@ -5,6 +5,7 @@
 #include "TextureGenerator.h"
 #include "HeightMapGenerator.h"
 #include "Engine/Engine.h"
+#include "KismetProceduralMeshLibrary.h"
 #include "CoreMinimal.h"
 #include "UObject/ConstructorHelpers.h"
 #include "ProceduralMeshComponent.h"
@@ -52,6 +53,7 @@ private:
 
 	//FUNCTIONS
 	void CreateMesh(int32 mapWidth, int32 mapHeight);
+	void CreateWater(float planeHeight, int32 mapHeight, int32 mapWidth);
 	
 	//POINTERS
 	TerrainType* regions;
@@ -60,15 +62,17 @@ private:
 	UStaticMeshComponent* StaticMesh;
 
 	UPROPERTY(VisibleAnywhere)
+		UStaticMeshComponent* WaterMesh;
+
+	UPROPERTY(VisibleAnywhere)
 		UMaterialInterface* worldMapMaterial;
 
 
-
+	UPROPERTY(VisibleAnywhere)
 	UProceduralMeshComponent* Mesh;
 
 	MeshData* meshData;
-	MeshData* MeshDataTerrain;
-	MeshData* MeshDataWater;
+
 
 	TextureGenerator* TextureGeneratorPtr;
 
