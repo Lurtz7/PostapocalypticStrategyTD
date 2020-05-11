@@ -14,10 +14,9 @@ AWorldmap::AWorldmap()
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("Static Mesh");
 	Mesh = CreateDefaultSubobject<UProceduralMeshComponent>("ProcedualMesh");
 	TextureGeneratorPtr = new TextureGenerator();
-	//static ConstructorHelpers::FObjectFinder<UMaterialInterface> BarFillObj(TEXT("/Game/Assets/Terrain/M_Landscape_GrassRock_Inst"));
-	//worldMapMaterial = BarFillObj.Object;
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BarFillObj(TEXT("/Game/Assets/Terrain/M_Landscape_GrassRock_Inst"));
+	worldMapMaterial = BarFillObj.Object;
 
-	//WaterMesh = CreateDefaultSubobject<UStaticMeshComponent>("WaterMesh");
 	HeightmapPtr = new HeightMapGenerator();
 }
 
@@ -53,8 +52,8 @@ void AWorldmap::MeshData::AddTriangle(int32 a, int32 b, int32 c)
 void AWorldmap::CreateMesh(int32 mapWidth, int32 mapHeight)
 {
 
-	float scaleXY = 1.f;
-	float scaleZ =1.f;
+	float scaleXY = 468.75f; // Till meter i UE4 Från CM till M
+	float scaleZ =1500.f; // Till meter i UE4 Från CM till M
 	float maxValue = 0;
 	int32 focusValue = 0;
 
@@ -137,7 +136,7 @@ void AWorldmap::CreateMesh(int32 mapWidth, int32 mapHeight)
 	UKismetProceduralMeshLibrary::CalculateTangentsForMesh(meshData->Vertices, meshData->Triangles, meshData->UVS, meshData->normals, meshData->tangents);
 
 	Mesh->CreateMeshSection_LinearColor(0, meshData->Vertices, meshData->Triangles, meshData->normals, meshData->UVS, meshData->vertexColors, meshData->tangents, true);
-	//Mesh->SetMaterial(0, worldMapMaterial);
+	Mesh->SetMaterial(0, worldMapMaterial);
 }
 
 void AWorldmap::createWorld(int32 mapHeight, int32 mapWidth, float noiseScale, float persistace, float lucanarity, int32 octaves)
