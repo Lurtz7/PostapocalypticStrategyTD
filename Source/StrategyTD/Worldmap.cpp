@@ -14,7 +14,7 @@ AWorldmap::AWorldmap()
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("Static Mesh");
 	Mesh = CreateDefaultSubobject<UProceduralMeshComponent>("ProcedualMesh");
 	TextureGeneratorPtr = new TextureGenerator();
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BarFillObj(TEXT("/Game/Assets/Terrain/M_Landscape_GrassRock_Inst"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BarFillObj(TEXT("/Game/Assets/Terrain/m_MainTerrainMaterial_Inst"));
 	worldMapMaterial = BarFillObj.Object;
 
 	HeightmapPtr = new HeightMapGenerator();
